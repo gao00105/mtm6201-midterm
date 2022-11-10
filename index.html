@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Flour Bakery</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17af513a56.js" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="wrapper">
+            <!--logo-->
+            <div class="block">
+                <div class="block logo"><img src="images/logo.jpg" alt="Flavor Flour Bakery" id="top">
+                <h1>Flavor Flour Bakery</h1>
+                <h3>All mood flavor you desire</h3>
+                </div>
+            </div>
+            <!--navigation bar-->
+            <div class="stack">
+                <a href="#top" class="block">Home</a>
+                <a href="html/menu.html" class="block">Menu</a>
+                <a href="#about-us" class="block">About</a>
+                <a href="#visit-us" class="block">Visit</a>
+                <a href="#contact-us" class="block">Contact</a>
+                <a href="html/cart.html" class="block"><i class="fa fa-shopping-bag" style="font-size:36px;"></i></a>
+            </div>
+        </header>
+        <main class="wrapper">
+            <!--welcome with background image-->
+            <div class="banner">
+                <div class="block">
+                    <h1 >Welcome to Our Store</h1>
+                    <p>Care about your health and nutrition?</p>
+                    <p>We offer more for family party.</p>
+                    <a href="html/menu.html" id="menu">Menu</a>
+                </div> 
+            </div>
+            <div class="wrapper">
+                <!--About us with bakery store special and bakery photo-->
+                <section class="about flexbox" id="about-us">
+                        <h2 class="home-banner">About Us</h2>
+                        <p>Our customers can get the cake that matches the mood of their events. We offer elegant, joyous and delicious service.</p>
+                        <img src="images/all-moods-marcaroons.jpg" alt="all mood options" id="macarons">
+                        <p>Excitement or placation? Happiness or sadness? Solemnness or amusement? You pick we make.</p>
+                        <p>Our bakers are experienced and creative.</p>
+                        <img src="images/baker.jpg" alt="baker">
+                </section>
+                <!--hours table, location embebed map, and contact form. screen size larger than 800, shows 2*2 grid system. screen size smaller than 800, shows column flexbox-->
+                <h2 class="home-banner" id="visit-us">Visit Us</h2>
+                <div class="visit-us">
+                    <!--hours-->
+                    <section class="hours flexbox">
+                        <table>
+                            <caption><h3>Hours of Our Store</h3></caption>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>11 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>11 AM - 4 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!--location-->
+                    <section class="location flexbox">
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1321.7292623436863!2d-75.69032845519686!3d45.41646099453644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05aed4ac8aa1%3A0x739696597ea6d249!2s292%20Elgin%20St%2C%20Ottawa%2C%20ON%20K2P%201M3!5e0!3m2!1sen!2sca!4v1667979268085!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                    <!--form-->
+                    <section class="contact flexbox">
+                        <h2 id="contact-us">Contact Us</h2>
+                        <form action="index.html" method="get">
+                            <label for="name" class="block">Full Name</label>
+                            <input type="text" id="name" name="name" class="block">
+                            <label for="email" class="block">Email</label>
+                            <input type="email" id="email" name="email" class="block">
+                            <label for="message" class="block">Message</label>
+                            <input type="text" id="message" name="message" class="block">
+                            <input type="submit" id="send" value="Send" class="block">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="wrapper">
+            <p>&copy; Copyright Jingwei Gao, 2022</p>
+            <p>All images are taken from <u>Adobe Stock</u></p>
+        </footer>
+    </div>
+</body>
+</html>

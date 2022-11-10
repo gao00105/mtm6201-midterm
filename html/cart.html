@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17af513a56.js" crossorigin="anonymous"></script>
+    <!--incomplete javascript-->
+    <script>
+        var i = 0;
+        document.getElementsByClassName("result")[i].innerHTML = totalCal();
+
+        function totalCal() {
+            var x = document.getElementsByClassName("quantity")[i].value * document.getElementsByClassName("price")[i].value;
+            i++;
+            return x;
+        }
+    </script>
+</head>
+<body>
+    <!--same header as home page-->
+    <header class="wrapper">
+        <div class="block">
+            <div class="block"><img src="../images/logo.jpg" alt="Flavor Flour Bakery" id="top"></div>
+            <h1>Flavor Flour Bakery</h1>
+            <h3>All mood flavor you desire</h3>
+        </div>
+        <div class="stack">
+            <a href="../index.html" class="block">Home</a>
+            <a href="menu.html" class="block">Menu</a>
+            <a href="../index.html#about-us" class="block">About</a>
+            <a href="../index.html#visit-us" class="block">Visit</a>
+            <a href="../index.html#contact-us" class="block">Contact</a>
+            <a href="#top" class="block"><i class="fa fa-shopping-bag" style="font-size:36px;"></i></a>
+        </div>
+    </header>
+    <main>
+        <!--shopping list allows user enter different products quatity and get total result-->
+        <section class="shopping-list flexbox">
+            <table>
+                <caption><h3>Shopping Cart</h3></caption>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../images/macaroon-1.jpg" alt="macaroon-1" class="order"></td>
+                        <td><h3>macaron-1</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/macaroon-2.jpg" alt="macaroon-2" class="order"></td>
+                        <td><h3>macaron-2</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/macaroon-3.jpg" alt="macaroon-3" class="order"></td>
+                        <td><h3>macaron-3</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/macaroon-4.jpg" alt="macaroon-4" class="order"></td>
+                        <td><h3>macaron-4</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/macaroon-5.jpg" alt="macaroon-5" class="order"></td>
+                        <td><h3>macaron-5</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/macaroon-6.jpg" alt="macaroon-6" class="order"></td>
+                        <td><h3>macaron-6</h3></td>
+                        <td><data class="price" value="4.99">$4.99</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cake-1.jpg" alt="cake-1" class="order"></td>
+                        <td><h3>cake-1</h3></td>
+                        <td><data class="price" value="40">$40</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cake-2.jpg" alt="cake-2" class="order"></td>
+                        <td><h3>cake-2</h3></td>
+                        <td><data class="price" value="40">$40</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cake-3.jpg" alt="cake-3" class="order"></td>
+                        <td><h3>cake-3</h3></td>
+                        <td><data class="price" value="40">$40</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cake-4.jpg" alt="cake-4" class="order"></td>
+                        <td><h3>cake-4</h3></td>
+                        <td><data class="price" value="40">$40</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cake-5.jpg" alt="cake-5" class="order"></td>
+                        <td><h3>cake-5</h3></td>
+                        <td><data class="price" value="40">$40</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/bread-1.jpg" alt="bread-1" class="order"></td>
+                        <td><h3>bread-1</h3></td>
+                        <td><data class="price" value="5">$5</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/bread-2.jpg" alt="bread-2" class="order"></td>
+                        <td><h3>bread-2</h3></td>
+                        <td><data class="price" value="5">$5</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/bread-3.jpg" alt="bread-3" class="order"></td>
+                        <td><h3>bread-3</h3></td>
+                        <td><data class="price" value="8">$8</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/bread-4.jpg" alt="bread-4" class="order"></td>
+                        <td><h3>bread-4</h3></td>
+                        <td><data class="price" value="3">$3</data></td>
+                        <td><input type="number" value="1" min="0" class="quantity"></td>
+                        <td><p class="result"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="wrapper">
+        <p>&copy; Copyright Jingwei Gao, 2022</p>
+        <p>All images are taken from <u>Adobe Stock</u></p>
+    </footer>
+</body>
+</html>
